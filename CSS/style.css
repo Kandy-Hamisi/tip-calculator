@@ -1,0 +1,138 @@
+/* general styling */
+:root{
+    --cyan-primary: hsl(172, 67%, 45%);
+
+    --drk-cyan-neut: hsl(183, 100%, 15%);
+    --drk-gray1-cyan: hsl(186, 14%, 43%);
+    --drk-gray2-cyan: hsl(184, 14%, 56%);
+    --lgt-gray1-cyan: hsl(185, 41%, 84%);
+    --lgt-gray2-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    --frm-fnt: 24px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--lgt-gray1-cyan);
+}
+
+/* end of general styles */
+
+.heading-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.myCard{
+    background: var(--lgt-gray2-cyan);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    border-radius: 20px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 1em 0;
+}
+
+.btn-container button{
+    padding: 10px 5px;
+    width: 22%;
+    text-align: center;
+    color: var(--white);
+    background: var(--drk-cyan-neut);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.btn-container button:hover{
+    transition: 0.6s ease;
+    color: var(--drk-cyan-neut);
+    background: var(--cyan-primary);
+}
+
+.output-side{
+    background: var(--drk-cyan-neut);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.tip-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.tip-info .tip-output{
+    color: var(--cyan-primary);
+}
+
+.tip-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.tip-text-container .tip-text{
+    color: var(--white);
+}
+
+.tip-text-container .tip-gray{
+    color: var(--drk-gray2-cyan);
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: inherit;
+    bottom: 10%;
+    left: 6.5%;
+}
+
+.reset .resetbtn{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    background: var(--cyan-primary);
+    border-radius: 3px;
+    
+}
