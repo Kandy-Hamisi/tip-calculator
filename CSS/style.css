@@ -1,4 +1,5 @@
 /* general styling */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 :root{
     --cyan-primary: hsl(172, 67%, 45%);
 
@@ -9,11 +10,13 @@
     --lgt-gray2-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
 
+    --fnt-family: 'Space Mono', monospace;
     --frm-fnt: 24px;
 }
 
 html{
     box-sizing: border-box;
+    font-family: var(--fnt-family);
 }
 
 *{
@@ -45,7 +48,7 @@ body{
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    /* width: 700px; */
     border-radius: 20px;
 }
 
@@ -53,6 +56,22 @@ body{
     display: flex;
     flex-direction: column;
     padding: 1em;
+}
+
+.field input{
+    position: relative;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.field i{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 24px;
 }
 
 .btn-container{
