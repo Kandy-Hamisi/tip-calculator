@@ -43,5 +43,7 @@ form.onsubmit = (e) => {
 resetBtn.onclick = () => {
     billInput.value = "";
     persons.value = "";
+    tipAmountOutput.innerText = "0";
+    totalAmountOutput.innerText = "0";
     
 }
